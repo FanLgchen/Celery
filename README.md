@@ -74,7 +74,7 @@ def ccp_send_sms_code(self, mobile, sms_code):
         raise self.retry(exc=Exception('发送短信失败'), max_retries=3)
 
     return result
-    ```
+```
 * 启动服务
 ```python
 celery -A celery_tasks.main worker -l info
